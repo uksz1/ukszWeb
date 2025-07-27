@@ -7,19 +7,18 @@
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <title>ukszWeb</title>
   <meta content="ukszWeb" property="og:title" />
-  <meta content="uksz's webring that connects webmasters wishing to go back in time" property="og:description" />
+  <meta content="uksz's webring that connects people wishing to go back in time" property="og:description" />
   <meta content="/images/iconSquare" property="og:image" />
   <meta content="#7133AB" data-react-helmet="true" name="theme-color" />
 </head>
 <body style="background-color:#111;">
-  <div class="content" style="opacity:0;">
-    <a class="logo" style="display:block;width:130px;height:37px;margin:auto;margin-top: 10px;margin-bottom: 10px;"><div class="logo1">uksz<button class="logo2">web</button><small class="ver">V1.0.6</small></div></a>
+  <div class="content" style="opacity:0;" id="top">
+    <a class="logo" style="display:block;width:130px;height:37px;margin:auto;margin-top: 10px;margin-bottom: 10px;"><div class="logo1">uksz<button class="logo2">web</button><small class="ver">V1.0.7</small></div></a>
     <h1>uksz's webring</h1>
     <p><a href="">webring.uksz.org</a> is a new, open, accessible webring for people, who want to go back in time, or live through an internet era they weren't there for.</p>
-    <p>This project seeks to connect webmasters across the internet with others, who share the same sentiment</p>
-
-    
-    <h2>Where do I join?</h2>
+    <p>This project seeks to connect people across the internet with others, who share the same sentiment</p>
+    <div id="guidelines"></div>
+    <h2>How do I join?</h2>
     <p>1. Put our widget on your website</p>
     <p>Widget HTML:</p>
     <textarea class="codeblock" onfocus="this.select()" readonly=""><div id="ukszWeb" style="display:inline-block;height:31px;"><a href="https://webring.uksz.org/@YOUR-SLUG/prev"><img src="https://webring.uksz.org/images/prev.gif"></a><a href="https://webring.uksz.org"><img src="https://webring.uksz.org/images/ukszWeb.gif"></a><a href="https://webring.uksz.org/@YOUR-SLUG/next"><img src="https://webring.uksz.org/images/next.gif"></a></div></textarea>
@@ -43,21 +42,27 @@
       <tr>
         <th>slug</th>
         <th>website</th>
+        <th>button</th>
       </tr>
       <tr>
         <td>@ukszWeb</td>
         <td><a href="https://uksz.org">webring.uksz.org</a></td>
+        <td class="btn"><a href=""><img src="/images/ukszWeb.gif"></a></td>
       </tr>
       <tr>
         <td>@uksz</td>
         <td><a href="https://uksz.org">uksz.org</a></td>
+        <td class="btn"><a href="https://uksz.org" target="_blank"><img src="https://uksz.org/buttons/uksz.gif"></a></td>
       </tr>
       <tr>
         <td>@m0th</td>
         <td><a href="https://mothtonoth.gay/">mothtonoth.gay</a></td>
+        <td class="btn"><a href="https://mothtonoth.gay/" target="_blank"><img src="https://mothtonoth.gay/sitebutton.png"></a></td>
       </tr>
     </table>
     <small>...and counting!</small>
+    <br><br style="line-height:120px;">
+    <small style="margin-top:80px;">made with ♡ by <a href="https://uksz.org">uksz.org</a></small>
   </div>
   <script>
     window.addEventListener('scroll', () => {

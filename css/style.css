@@ -78,7 +78,13 @@ table{
 caption,th,td{
   border:1px solid #eee;
   padding:8px 12px;
+}
+td{
   text-align:left;
+  text-overflow: ellipsis;
+}
+td.btn{
+  text-align:center;
 }
 caption{text-align:center;border-bottom:unset;}
 caption,th{
