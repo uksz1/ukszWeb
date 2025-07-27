@@ -2,6 +2,7 @@
   --accent:#7133AB;
   scroll-behavior:smooth;
 }
+::selection{color:#7133AB;background-color:#111;}
 body{
   user-select:none;
   margin:0;
