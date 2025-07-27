@@ -96,7 +96,6 @@ tr:nth-child(even){
   top:0px;
   margin:auto;
   margin-top:50px;
-  margin-bottom:10px;
   font-family:Arial;
   font-size:28px;
   font-weight:bold;
@@ -122,6 +121,7 @@ tr:nth-child(even){
   outline:none;
   box-shadow:0 0 5px #222;
 }
+.ver{font-family:monospace;font-weight:100;font-size: 10px;margin-top:0;display:inline;position:relative;bottom:20px}
 /* mobile */
 @media only screen and (max-width:600px){
   body{
