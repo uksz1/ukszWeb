@@ -84,6 +84,10 @@ td{
 td.btn{
   text-align:center;
 }
+td.btn > img{
+  width:88px;
+  height:31px;
+}
 caption{text-align:center;border-bottom:unset;}
 caption,th{
   background-color:#333;
