@@ -1,5 +1,6 @@
 :root{
   --accent:#7133AB;
+  --link:#B876D6;
   scroll-behavior:smooth;
 }
 ::selection{color:#7133AB;background-color:#111;}
@@ -13,14 +14,14 @@ body{
 }
 h1,h2{text-align:center;}
 p{
-  max-width:60ch;
+  max-width: min(60ch, 90%);
   margin:auto;
   text-align:left;
 }
 .rule{margin-bottom:6px}
 :any-link{
+  color: #b876d6;
   text-decoration:none;
-  color:var(--accent);
   transition:text-shadow 0.2s,text-decoration 0.2s;
 }
 :any-link:hover{
@@ -29,7 +30,7 @@ p{
   text-shadow:0 0 5px var(--accent);
 }
 img{image-rendering:pixelated;-webkit-user-drag:none;}
-div.content{
+.content{
   margin:30px auto;
   display:inline-block;
   background-color:#222;
@@ -50,8 +51,6 @@ div.content{
     inset 0 -2px 10px var(--accent);
   border-radius:12px;
   border:solid 2px var(--accent);
-  transition:opacity 0.2s;
-  opacity:1 !important;
 }
 .codeblock{
   color:#eee;
@@ -72,8 +71,7 @@ div.content{
 table{
   margin:20px auto auto auto;
   border-collapse:collapse;
-  width:60%;
-  max-width:60ch;
+  width:60ch;
 }
 caption,th,td{
   border:1px solid #eee;
@@ -136,7 +134,7 @@ tr:nth-child(even){
   .logo1{
     margin-top:10px !important;
   }
-  div.content{
+  .content{
     margin:unset;
     border-radius:unset;
     border:unset;

@@ -12,32 +12,32 @@
   <meta content="#7133AB" data-react-helmet="true" name="theme-color" />
 </head>
 <body style="background-color:#111;">
-  <div class="content" style="opacity:0;" id="top">
-    <a class="logo" style="display:block;width:130px;height:37px;margin:auto;margin-top: 10px;margin-bottom: 10px;"><div class="logo1">uksz<button class="logo2">web</button><small class="ver">V1.0.8</small></div></a>
-    <h1>uksz's webring</h1>
-    <p><a href="">webring.uksz.org</a> is a new, open, accessible webring for people, who want to go back in time, or live through an internet era they weren't there for.</p>
+  <main class="content" id="top">
+    <header class="logo" style="display:block;width:130px;height:37px;margin:auto;margin-top: 10px;margin-bottom: 10px;"><div class="logo1">uksz<button class="logo2">web</button><small class="ver">V1.0.9</small></div></header>
+    <h1 role="Header">uksz's webring</h1>
+    <p><a href="">webring.uksz.org</a> is a new, open webring for people, who want to go back in time, or live through an internet era they weren't there for.</p>
     <p>This project seeks to connect people across the internet with others, who share the same sentiment</p>
-    <div id="guidelines"></div>
+    <div id="guidelines" role="How to join guide"></div>
     <h2>How do I join?</h2>
     <p>1. Put our widget on your website</p>
     <p>Widget HTML:</p>
-    <textarea class="codeblock" onfocus="this.select()" readonly=""><div id="ukszWeb" style="display:inline-block;height:31px;"><a href="https://webring.uksz.org/@YOUR-SLUG/prev"><img src="https://webring.uksz.org/images/prev.gif"></a><a href="https://webring.uksz.org"><img src="https://webring.uksz.org/images/ukszWeb.gif"></a><a href="https://webring.uksz.org/@YOUR-SLUG/next"><img src="https://webring.uksz.org/images/next.gif"></a></div></textarea>
+    <textarea class="codeblock" onfocus="this.select()" readonly="" aria-label="Webring widget HTML"><div id="ukszWeb" style="display:inline-block;height:31px;"><a href="https://webring.uksz.org/@YOUR-SLUG/prev"><img src="https://webring.uksz.org/images/prev.gif"></a><a href="https://webring.uksz.org"><img src="https://webring.uksz.org/images/ukszWeb.gif"></a><a href="https://webring.uksz.org/@YOUR-SLUG/next"><img src="https://webring.uksz.org/images/next.gif"></a></div></textarea>
     <br><br>
-    <div id="ukszWeb" style="display:inline-block;height:31px;"><a href="@ukszWeb/prev.html"><img src="/images/prev.gif"></a><a href=""><img src="/images/ukszWeb.gif"></a><a href="/@ukszWeb/next.html"><img src="/images/next.gif"></a></div>
+    <div id="ukszWeb" style="display:inline-block;height:31px;"><a href="@ukszWeb/prev.html"><img src="/images/prev.gif" alt="previous"></a><a href=""><img src="/images/ukszWeb.gif" alt="ukszWeb"></a><a href="/@ukszWeb/next.html"><img src="/images/next.gif" alt="next"></a></div>
     <br><br>
-    <p>2. Send your application through our <a href="https://discord.gg/sESNBZ4UGW">Discord</a><br>or an e-mail to <img class="mail" src="images/mail1.png"><img class="mail" src="images/mail2.png"></p>
+    <p>2. Send your application through our <a href="https://discord.gg/sESNBZ4UGW">Discord</a><br>or an e-mail to <img class="mail" src="images/mail.png" alt="image displaying my email address in order to prevent bots from scraping it"></p>
     <br>
     <p>Example:</p>
-    <textarea class="codeblock">Hi, I'd like to join your webring! :)&NewLine;slug: uksz&NewLine;website: https://uksz.org/links</textarea>
-    <h2>Good-to-know info:</h2>
+    <textarea class="codeblock" aria-label="Example of the application message">Hi, I'd like to join your webring! :)&NewLine;slug: uksz&NewLine;website: https://uksz.org/links</textarea>
+    <h2 role="Guidelines/useful information">Good-to-know info:</h2>
     <p class="rule">&bull; Link to the page containing the ukszWeb widget, so it's easy to click through the webring</p>
     <p class="rule">&bull; "Slug" is your "webring name". it's visible in the the list below and in the webring's link eg. You claim "alice" as your slug, so the link to the person next to you would be: webring.uksz.org/go/alice/next</p>
     <p class="rule">&bull; Keep your slug and the linked page PG - We want this website to be SFW</p>
     <p class="rule">&bull; Put ukszWeb's widget on your website before applying, so we can confirm you own the website and that you will have links ready when you get accepted</p>
     <p class="rule">&bull; We only accept websites that don't contain generative AI's output</p>
-    <p class="rule">&bull; We don't accept websites promoting <span style="text-decoration: underline dotted 2px var(--accent);cursor:help" title="including but not limited to:">violence/witchhunting/doxxing</span> and other despicable actions</p>
+    <p class="rule">&bull; We don't accept websites promoting <span style="cursor:help" title="including but not limited to:">violence/witchhunting/doxxing</span> and other despicable actions</p>
     <p class="rule">&bull; We use HI (Human Intelligence) to determine if the website meets criteria and is fit to be accepted into the webring. Please allow up to 18h to get your result</p>
-    <table id="members">
+    <table id="members" role="Members">
       <caption><b>members</b></caption>
       <tr>
         <th>slug</th>
@@ -46,24 +46,24 @@
       </tr>
       <tr>
         <td>@ukszWeb</td>
-        <td><a href="https://uksz.org">webring.uksz.org</a></td>
-        <td class="btn"><a href=""><img src="/images/ukszWeb.gif"></a></td>
+        <td><a href="https://webring.uksz.org">webring.uksz.org</a></td>
+        <td class="btn"><img src="/images/ukszWeb.gif" alt="ukszWeb button"></td>
       </tr>
       <tr>
         <td>@uksz</td>
-        <td><a href="https://uksz.org">uksz.org</a></td>
-        <td class="btn"><a href="https://uksz.org" target="_blank"><img src="https://uksz.org/buttons/uksz.gif"></a></td>
+        <td><a href="https://uksz.org" target="_blank">uksz.org</a></td>
+        <td class="btn"><img src="https://uksz.org/buttons/uksz.gif" alt="@uksz's site button"></td>
       </tr>
       <tr>
         <td>@m0th</td>
-        <td><a href="https://mothtonoth.gay/">mothtonoth.gay</a></td>
-        <td class="btn"><a href="https://mothtonoth.gay/" target="_blank"><img src="https://mothtonoth.gay/sitebutton.png"></a></td>
+        <td><a href="https://mothtonoth.gay/" target="_blank">mothtonoth.gay</a></td>
+        <td class="btn"><img src="https://mothtonoth.gay/sitebutton.png" alt="@m0th's site button"></td>
       </tr>
     </table>
     <small>...and counting!</small>
     <br><br style="line-height:120px;">
     <small style="margin-top:80px;">made with ♡ by <a href="https://uksz.org">uksz.org</a></small>
-  </div>
+  </main>
   <script>
     window.addEventListener('scroll', () => {
     const logo = document.querySelector('.logo');
