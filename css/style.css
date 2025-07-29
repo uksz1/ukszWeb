@@ -147,3 +147,11 @@ tr:nth-child(even){
   }
   p,table{width:90%;}
 }
+.pulse{
+  animation: alternate 2s pulse ease-in-out infinite;
+}
+@keyframes pulse {
+  0%{color:#eee}
+  50%{color:#c00}
+  100%{color:#eee}
+}
