@@ -8,17 +8,21 @@
   const slug = keys[0];
   const direction = keys[1];
   if(!['next','prev','previous','p','n'].includes(direction)){
-    document.getElementById('msg').textContent = 'error: wrong dir';
+    document.getElementById('msg').innerHTML = 'ERROR 1<br>wrong dir: "' + direction + '"';
     return;
   }
   const response = await fetch('/webring.json');
   if(!response.ok){
-    document.getElementById('msg').textContent = 'error: failed to load webring data';
+    document.getElementById('msg').innerHTML = 'ERROR 2<br>failed to load webring data';
     return;
   }
   const mapping = await response.json();
+  if(slug == 'YOUR-SLUG'){
+    document.getElementById('msg').innerHTML = 'ERROR 3<br>seems like you forgot to change "' + slug + '" into your chosen slug';
+    return;
+  }
   if(!(slug in mapping)){
-    document.getElementById('msg').textContent = 'error: unknown slug';
+    document.getElementById('msg').innerHTML = 'ERROR 4<br>unknown slug: "' + slug + '"';
     return;
   }
   const slugs = Object.keys(mapping);

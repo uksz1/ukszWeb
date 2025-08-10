@@ -1,1 +1,8 @@
-disallow *
+User-agent: *
+Disallow: /
+
+BORN TO DIE
+WORLD IS A FUCK 鬼神
+Kill Em All 1989
+I am a clanker hater
+410,757,864,530 DEAD BOTS

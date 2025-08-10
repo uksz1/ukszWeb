@@ -71,11 +71,15 @@ img{image-rendering:pixelated;-webkit-user-drag:none;}
 table{
   margin:20px auto auto auto;
   border-collapse:collapse;
-  width:60ch;
+  width: min(60ch, 90%);
 }
 caption,th,td{
   border:1px solid #eee;
   padding:8px 12px;
+  height:31px;
+}
+.slug{
+  padding:8px 0 8px 12px;width:fit-content
 }
 td{
   text-align:left;
