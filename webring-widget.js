@@ -1,0 +1,34 @@
+(async () => {
+  const baseUrl = location.origin;
+  const widget = document.getElementById(`ukszWeb`);
+  if(!widget) return;
+  Object.assign(widget.style,{
+    display: `inline-block`,
+    height: `31px`,
+    width: `150px`,
+    fontFamily: `monospace`,
+    fontSize: `10px`
+  })
+  try{
+    const myresponse = await fetch(`https://webring.uksz.org/webring.json`);
+    if(!myresponse.ok) throw new Error(`UH OH #1: didnt fetch webring.json`);
+    const webring = await myresponse.json();
+    let slug;
+    for(const [name, url] of Object.entries(webring)){
+      if(url === baseUrl){
+        slug = name;
+        break;
+      }
+    }
+    if(!slug){
+      widget.textContent = 'Waiting to be accepted into ukszWeb';
+      widget.style.backgroundColor=`#7133AB80`;
+      return;
+    }
+    widget.innerHTML = `<a href="https://webring.uksz.org/r?${slug}&prev"><img src="https://webring.uksz.org/images/prev.gif" alt="previous"></a><a href="https://webring.uksz.org" target="_blank" rel="noopener"><img src="https://webring.uksz.org/images/ukszWeb.gif" alt="ukszWeb webring"></a><a href="https://webring.uksz.org/r?${slug}&next"><img src="https://webring.uksz.org/images/next.gif" alt="next"></a>`
+  }
+  catch(e){
+    widget.textContent = `Couldn't load webring data`;
+    console.error(e);
+  }
+})();
