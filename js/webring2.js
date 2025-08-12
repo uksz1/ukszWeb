@@ -11,7 +11,7 @@
     document.getElementById('msg').innerHTML = 'ERROR 1<br>wrong dir: "' + direction + '"';
     return;
   }
-  const response = await fetch('/webring.json');
+  const response = await fetch(`/webring.json?v=${Date.now()}`);
   if(!response.ok){
     document.getElementById('msg').innerHTML = 'ERROR 2<br>failed to load webring data';
     return;

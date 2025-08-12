@@ -10,7 +10,7 @@
     fontSize: `10px`
   })
   try{
-    const myresponse = await fetch(`https://webring.uksz.org/webring.json`);
+    const myresponse = await fetch(`https://webring.uksz.org/webring.json?v=${Date.now()}`);
     if(!myresponse.ok) throw new Error(`UH OH #1: didnt fetch webring.json`);
     const webring = await myresponse.json();
     let slug;
