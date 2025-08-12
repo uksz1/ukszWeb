@@ -21,7 +21,7 @@
       }
     }
     if(!slug){
-      widget.innerHTML = '<div style="width:62px;height:31px;float:left;display:flex;text-align:center;align-items: center;"><span style="width:100%;user-select:none;">waiting<br>to join</span></div><div style="width:88px;height:31px;display:inline"><a href="https://webring.uksz.org" target="_blank"><img src="images/ukszWeb.gif" alt="ukszWeb"></a></div>';
+      widget.innerHTML = '<div style="width:62px;height:31px;float:left;display:flex;text-align:center;align-items: center;"><span style="width:100%;user-select:none;">waiting<br>to join</span></div><div style="width:88px;height:31px;display:inline"><a href="https://webring.uksz.org" target="_blank"><img src="https://webring.uksz.org/images/ukszWeb.gif" alt="ukszWeb"></a></div>';
       widget.style.backgroundColor=`#7133AB80`;
       widget.style.borderRadius=`4px`;
       return;
