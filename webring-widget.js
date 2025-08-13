@@ -7,7 +7,8 @@
   "m4ddy": "https://maddyka.neocities.org",
   "error": "https://oerrorpage.neocities.org",
   "yoyledotcity": "https://yoyle.city",
-  "YEESITE": "https://yeepsite.nekoweb.org"
+  "YEESITE": "https://yeepsite.nekoweb.org",
+  "ockolus": "https://ockolus.neocities.org/"
   };
 
   const baseUrl = location.origin;
