@@ -1,15 +1,4 @@
 (async () => {
-
-  const webring = {
-  "ukszWeb": "https://webring.uksz.org",
-  "uksz": "https://uksz.org",
-  "m0th": "https://mothtonoth.art",
-  "m4ddy": "https://maddyka.neocities.org",
-  "error": "https://oerrorpage.neocities.org",
-  "yoyledotcity": "https://yoyle.city",
-  "YEESITE": "https://yeepsite.nekoweb.org"
-  };
-
   const baseUrl = location.origin;
   const widget = document.getElementById(`ukszWeb`);
   if(!widget) return;
@@ -20,6 +9,10 @@
     fontFamily: `monospace`,
     fontSize: `10px`
   })
+  try{
+    const myresponse = await fetch(`https://webring.uksz.org/webring.json?v=${Date.now()}`);
+    if(!myresponse.ok) throw new Error(`UH OH #1: didnt fetch webring.json`);
+    const webring = await myresponse.json();
     let slug;
     for(const [name, url] of Object.entries(webring)){
       if(url === baseUrl){
@@ -34,4 +27,9 @@
       return;
     }
     widget.innerHTML = `<a href="https://webring.uksz.org/r?${slug}&prev"><img src="https://webring.uksz.org/images/prev.gif" alt="previous"></a><a href="https://webring.uksz.org" target="_blank" rel="noopener"><img src="https://webring.uksz.org/images/ukszWeb.gif" alt="ukszWeb webring"></a><a href="https://webring.uksz.org/r?${slug}&next"><img src="https://webring.uksz.org/images/next.gif" alt="next"></a>`
+  }
+  catch(e){
+    widget.textContent = `Couldn't load webring data`;
+    console.error(e);
+  }
 })();
