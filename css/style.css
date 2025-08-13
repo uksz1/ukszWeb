@@ -79,7 +79,7 @@ caption,th,td{
   height:31px;
 }
 .slug{
-  padding:8px 0 8px 12px;width:fit-content
+  padding:8px 12px 8px 12px;width:fit-content
 }
 td{
   text-align:left;

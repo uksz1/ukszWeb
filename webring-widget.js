@@ -8,7 +8,8 @@
   "error": "https://oerrorpage.neocities.org",
   "yoyledotcity": "https://yoyle.city",
   "YEESITE": "https://yeepsite.nekoweb.org",
-  "ockolus": "https://ockolus.neocities.org"
+  "ockolus": "https://ockolus.neocities.org",
+  "Nameless": "https://music-and-more-and-more.nekoweb.org"
   };
 
   const baseUrl = location.origin;
