@@ -9,7 +9,8 @@
   "yoyledotcity": "https://yoyle.city",
   "YEESITE": "https://yeepsite.nekoweb.org",
   "ockolus": "https://ockolus.neocities.org",
-  "Nameless": "https://music-and-more-and-more.nekoweb.org"
+  "Nameless": "https://music-and-more-and-more.nekoweb.org",
+  "kellin": "https://eridanamporadefender.nekoweb.org"
   };
 
   const baseUrl = location.origin;
