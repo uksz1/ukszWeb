@@ -50,7 +50,6 @@ img{image-rendering:pixelated;-webkit-user-drag:none;}
     inset 0 2px 10px var(--accent),
     inset 0 -2px 10px var(--accent);
   border-radius:12px;
-  border:solid 2px var(--accent);
 }
 .codeblock{
   color:#eee;
