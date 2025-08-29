@@ -161,11 +161,10 @@ caption,th{
   .content{
     margin:unset;
     border-radius:unset;
-    border:unset;
     width:100vw;
     box-shadow:unset;
   }
-  p,table{width:90%;}
+  p,table{width:90vw;}
 }
 .pulse{
   animation: alternate 2s pulse ease-in-out infinite;
