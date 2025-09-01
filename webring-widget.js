@@ -2,7 +2,7 @@
 
   const webring = {
   "ukszWeb": "https://webring.uksz.org",
-  "uksz": "https://uksz.org",
+  "Jae": "https://jae.gg",
   "m0th": "https://mothtonoth.art",
   "m4ddy": "https://maddyka.nekoweb.org",
   "error": "https://oerrorpage.neocities.org",
