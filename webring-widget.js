@@ -11,7 +11,8 @@
   "ockolus": "https://ockolus.neocities.org",
   "Nameless": "https://music-and-more-and-more.nekoweb.org",
   "kellin": "https://kellin09.nekoweb.org",
-  "reliquia": "https://ancientcrypt.neocities.org"
+  "reliquia": "https://ancientcrypt.neocities.org",
+  "tapeykatt": "https://tapeykatt.neocities.org"
   };
 
   const baseUrl = location.origin;
