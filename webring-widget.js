@@ -13,7 +13,8 @@
   "kellin": "https://kellin09.nekoweb.org",
   "reliquia": "https://ancientcrypt.neocities.org",
   "tapeykatt": "https://tapeykatt.neocities.org",
-  "TUFFGROUNDS": "https://tuffgong.nekoweb.org"
+  "TUFFGROUNDS": "https://tuffgong.nekoweb.org",
+  "sctech": "https://sctech.localplayer.dev/"
   };
 
   const baseUrl = location.origin;

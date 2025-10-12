@@ -2,7 +2,7 @@
   const [rawSlug, directionRaw] = window.location.pathname.split('/').filter(Boolean);
   const slug = rawSlug.replace(/^@/, '');
   const direction = directionRaw.replace(/\.html$/, '');
-  const res = await fetch('/webring.json');
+  const res = await fetch(`/webring.json?${Date.now()}`);
   if (!res.ok) return;
   const mapping = await res.json();
   const slugs = Object.keys(mapping);
