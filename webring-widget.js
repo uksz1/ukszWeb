@@ -14,7 +14,8 @@
   "reliquia": "https://ancientcrypt.neocities.org",
   "tapeykatt": "https://tapeykatt.neocities.org",
   "TUFFGROUNDS": "https://tuffgong.nekoweb.org",
-  "sctech": "https://sctech.localplayer.dev"
+  "sctech": "https://sctech.qzz.io",
+  "SyntaxError":"https://errorsyntax.neocities.org"
   };
 
   const baseUrl = location.origin;
