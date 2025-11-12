@@ -15,7 +15,8 @@
   "tapeykatt": "https://tapeykatt.neocities.org",
   "TUFFGROUNDS": "https://tuffgong.nekoweb.org",
   "sctech": "https://sctech.qzz.io",
-  "SyntaxError":"https://errorsyntax.neocities.org"
+  "SyntaxError":"https://errorsyntax.neocities.org",
+  "hml":"https://hml.nekoweb.org",
   };
 
   const baseUrl = location.origin;
@@ -36,10 +37,10 @@
       }
     }
     if(!slug){
-      widget.innerHTML = `<div style="width:62px;height:31px;float:left;display:flex;text-align:center;align-items: center;"><span style="width:100%;user-select:none;">waiting<br>to join</span></div><div style="width:88px;height:31px;display:inline"><a href="https://web.jae.gg" target="_blank"><img src="https://web.jae.gg/images/JaeWEB.gif" alt="JaeWEB"></a></div>`;
+      widget.innerHTML = `<style>span.update{animation:flickering 4s infinite;position:absolute;width:150px;top:-14px;z-index:999;display:block;background-color:#1118;border-radius:20px;border:1px #b876d6 solid;}@keyframes flickering{0%{color:#b876d6}50%{color:#e00}100%{color:#b876d6}}</style><div style="position:relative"><span class="update">update widget <a href="//web.jae.gg" target="_blank">here</a>!</span><div style="width:62px;height:31px;float:left;display:flex;text-align:center;align-items: center;position:relative"><span style="width:100%;user-select:none;">waiting<br>to join</span></div><div style="width:88px;height:31px;display:inline"><a href="https://web.jae.gg" target="_blank"><img src="https://web.jae.gg/images/JaeWEB.gif" alt="JaeWEB"></a></div></div>`;
       widget.style.backgroundColor=`#7133AB80`;
       widget.style.borderRadius=`4px`;
       return;
     }
-    widget.innerHTML = `<a href="https://web.jae.gg/r?${slug}&prev"><img src="https://web.jae.gg/images/prev.gif" alt="previous"></a><a href="https://web.jae.gg" target="_blank" rel="noopener"><img src="https://web.jae.gg/images/JaeWEB.gif" alt="web.jae.gg webring"></a><a href="https://web.jae.gg/r?${slug}&next"><img src="https://web.jae.gg/images/next.gif" alt="next"></a>`
+    widget.innerHTML = `<style>span.update{animation:flickering 4s infinite;position:absolute;width:150px;top:-14px;z-index:999;display:block;background-color:#1118;border-radius:20px;border:1px #b876d6 solid;}@keyframes flickering{0%{color:#b876d6}50%{color:#e00}100%{color:#b876d6}}</style><div style="position:relative"><span class="update">update widget <a href="//web.jae.gg" target="_blank">here</a>!</span><a href="https://web.jae.gg/r?${slug}&prev"><img src="https://web.jae.gg/images/prev.gif" alt="previous"></a><a href="https://web.jae.gg" target="_blank" rel="noopener"><img src="https://web.jae.gg/images/JaeWEB.gif" alt="web.jae.gg webring"></a><a href="https://web.jae.gg/r?${slug}&next"><img src="https://web.jae.gg/images/next.gif" alt="next"></a></div>`
 })();
