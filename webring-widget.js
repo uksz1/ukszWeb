@@ -2,7 +2,7 @@
   const response = await fetch(`https://web.jae.gg/webring.json?${Date.now()}`);
   const webring = await response.json();
   const baseUrl = location.origin;
-  const widget = document.getElementById(`ukszWeb`);
+  const widget = document.getElementById(`ukszWeb`); 
   if(!widget) return;
   Object.assign(widget.style,{
     display: `inline-block`,
