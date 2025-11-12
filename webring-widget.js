@@ -1,6 +1,23 @@
 (async () => {
-  const response = await fetch(`https://web.jae.gg/webring.json?${Date.now()}`);
-  const webring = await response.json();
+
+  const webring = {
+  "ukszWeb": "https://webring.uksz.org",
+  "Jae": "https://jae.gg",
+  // "m0th": "https://mothtonoth.art",
+  "m4ddy": "https://maddyka.nekoweb.org",
+  "error": "https://oerrorpage.neocities.org",
+  "yoyledotcity": "https://yoyle.city",
+  "YEESITE": "https://yeepsite.nekoweb.org",
+  "ockolus": "https://ockolus.neocities.org",
+  "Nameless": "https://music-and-more-and-more.nekoweb.org",
+  "kellin": "https://kellin09.nekoweb.org",
+  "reliquia": "https://ancientcrypt.neocities.org",
+  "tapeykatt": "https://tapeykatt.neocities.org",
+  "TUFFGROUNDS": "https://tuffgong.nekoweb.org",
+  "sctech": "https://sctech.qzz.io",
+  "SyntaxError":"https://errorsyntax.neocities.org"
+  };
+
   const baseUrl = location.origin;
   const widget = document.getElementById(`ukszWeb`); 
   if(!widget) return;
